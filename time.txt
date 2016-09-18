@@ -1,0 +1,7 @@
+Selection sort timing for  100inputs :5.6e-05
+Selection sort timing for  1000inputs :0.014236
+Selection sort timing for  10000inputs :0.468595
+Selection sort timing for  30000inputs :3.9453
+Selection sort timing for  50000inputs :11.4643
+Selection sort timing for  70000inputs :22.2624
+Selection sort timing for  100000inputs :45.1314

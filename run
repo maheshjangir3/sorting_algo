@@ -1,0 +1,57 @@
+# !/bin /bash
+echo "         *********Algorithm Assignment********* " 
+echo " Select choice to run a sorting algorithm"
+echo " 0- Exit "
+echo " 1- Bubble Sort "
+echo " 2- Selection Sort "
+echo " 3- Insertion Sort "
+echo " 4- Merge Sort "
+echo " 5- Quick Sort"
+echo " 6- Heap Sort "
+
+echo " 7- See execution time file "
+echo " 8- How many numbers u want to sort "
+echo " 9- quick sort worst case "
+echo " 10- best case of insertion sort"
+rm time.txt
+
+NUM=
+until [ "$NUM" = "0" ]; do
+
+read NUM 
+    case $NUM in
+    0)exit ;;
+    1) g++ bubble.cpp 
+        ./a.out ;;
+	2) g++ selection.cpp 
+	   ./a.out ;;
+	3) g++ insertion.cpp 
+	   ./a.out    ;;
+	4) g++ merge.cpp
+	    ./a.out    ;;
+	5) g++ quick.cpp
+	     ./a.out  ;;
+	6) g++ heap.cpp 
+	   ./a.out        ;;
+	7) cat time.txt ;;   
+	8) g++ input.cpp
+	     ./a.out ;;
+	9) g++ spcl_inpt.cpp
+	      ./a.out
+	      g++ quickworst.cpp
+	     ./a.out  ;;
+	10) g++ spcl_inpt.cpp
+	      ./a.out
+	      g++ insertionbest.cpp
+	     ./a.out  ;;
+
+	*) echo " Please enter a valid no "
+
+    esac 
+    
+   
+    echo "done... if u want to run other sorting algo ..make choice"
+
+
+done
+
